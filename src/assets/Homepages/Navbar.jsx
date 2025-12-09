@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="w-full shadow-sm py-3 px-10 flex items-center justify-between bg-white relative">
+    <nav className="w-full py-3 px-10 flex items-center justify-between bg-white relative">
       {/* Logo */}
       <img
         src="/images/Insurance-Logo.png"
@@ -30,12 +30,62 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/car-insurance" className="block px-5 py-2 hover:bg-gray-100">
-                Car Insurance
+                Motor Car Insurance
               </Link>
             </li>
             <li>
               <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
-                Travel Insurance
+                Property Insurance
+              </Link>
+            </li>
+            <li>
+              <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
+                MedicalInsurance
+              </Link>
+            </li>
+            <li>
+              <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
+                Life Insurance
+              </Link>
+            </li>
+            <li>
+              <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
+                Personal Accident
+              </Link>
+            </li>
+            <li>
+              <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
+                Property Insurance
+              </Link>
+            </li>
+            <li>
+              <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
+                Casualty Lines Insurance
+              </Link>
+            </li>
+            <li>
+              <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
+                Suretyship
+              </Link>
+            </li>
+            <li>
+              <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
+                Financial Lines
+              </Link>
+            </li>
+            <li>
+              <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
+                Engineering Insurance
+              </Link>
+            </li>
+            <li>
+              <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
+                Speciality Lines
+              </Link>
+            </li>
+            <li>
+              <Link to="/travel-insurance" className="block px-5 py-2 hover:bg-gray-100">
+                Marine Insurance
               </Link>
             </li>
           </ul>
