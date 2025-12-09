@@ -1,8 +1,15 @@
 import React from 'react'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './assets/Pages/Home'
 const App = () => {
   return (
-    <div className='bg-red-800'>App</div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   )
 }
 
