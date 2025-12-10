@@ -1,83 +1,169 @@
 import React from "react";
 
-// 👉 Put your real logo image paths here (in public/logos/...)
 const insurersRow1 = [
-  { logo: "/logos/oona.png" },
-  { logo: "/logos/aig.png" },
-  { logo: "/logos/allied.png" },
-  { logo: "/logos/alpha.png" },
-  { logo: "/logos/bpi.png" },
-  { logo: "/logos/bethel.png" },
+  { logo: "/images/oona.png", w: 120, h: 42 },
+  { logo: "/images/aig.png", w: 120, h: 42 },
+  { logo: "/images/allied.png", w: 120, h: 42 },
+  { logo: "/images/alpha.png", w: 120, h: 42 },
+  { logo: "/images/bpi.png", w: 120, h: 42 },
+  { logo: "/images/bethel.png", w: 120, h: 42 },
+  { logo: "/images/perla.png", w: 120, h: 42 },
 ];
 
 const insurersRow2 = [
-  { logo: "/logos/cibeles.png" },
-  { logo: "/logos/pacific.png" },
-  { logo: "/logos/perla.png" },
-  { logo: "/logos/oona2.png" },
-  { logo: "/logos/allied2.png" },
+  { logo: "/images/cibeles.png", w: 120, h: 42 },
+  { logo: "/images/pacific.png", w: 120, h: 42 },
+  { logo: "/images/perla.png", w: 120, h: 42 },
+  { logo: "/images/oona.png", w: 120, h: 42 },
+  { logo: "/images/allied.png", w: 120, h: 42 },
+  { logo: "/images/bethel.png", w: 120, h: 42 },
+  { logo: "/images/aig.png", w: 120, h: 42 },
 ];
+
+const SlideTrack = ({ items, speed = "28s", reverse = false }) => {
+  const duplicated = [...items, ...items];
+
+  return (
+    <div className="relative slider overflow-hidden" aria-hidden="false">
+      <div
+        className={`track ${reverse ? "track--reverse" : ""}`}
+        style={{ ["--speed"]: speed }}
+        role="list"
+      >
+        {duplicated.map((item, i) => (
+          <div
+            key={i}
+            className="logo-card h-[70px] w-[150px] bg-white rounded-2xl flex items-center justify-center shadow flex-shrink-0"
+            role="listitem"
+          >
+            <img
+              src={item.logo}
+              alt=""
+              width={item.w}
+              height={item.h}
+              loading="eager"
+              decoding="sync"
+              className="max-h-[42px] max-w-[120px] object-contain"
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* FRONT BLURS - inside slider so they overlay the logos */}
+      <div className="front-blur-left" aria-hidden="true" />
+      <div className="front-blur-right" aria-hidden="true" />
+
+      <style>{`
+        /* Slider base */
+        .slider { position: relative; width: 100%; overflow: hidden; }
+
+        /* The track (logos) - sits under front blur */
+        .track {
+          display: flex;
+          gap: 1.5rem;
+          align-items: center;
+          width: max-content;
+          animation: scroll var(--speed, 30s) linear infinite;
+          will-change: transform;
+          backface-visibility: hidden;
+          transform-style: preserve-3d;
+          -webkit-backface-visibility: hidden;
+          z-index: 1; /* logos below blur */
+        }
+
+        .track--reverse { animation-direction: reverse; }
+        .track > * { flex: 0 0 auto; }
+
+        @keyframes scroll {
+          from { transform: translate3d(0,0,0); }
+          to   { transform: translate3d(-50%,0,0); }
+        }
+
+        /* Pause on hover */
+        .slider:hover .track { animation-play-state: paused; }
+
+        /* FRONT BLUR overlay styles (in front of logos) */
+        .front-blur-left,
+        .front-blur-right {
+          position: absolute;
+          top: 0;
+          height: 100%;
+          width: 220px;             /* tweak for effect width */
+          z-index: 5;               /* above logos */
+          pointer-events: none;     /* allow interacting with logos if needed */
+          display: block;
+        }
+
+        /* Left: gradient + soft blur. Use backdrop-filter for softening content underneath (if supported) */
+        .front-blur-left {
+          left: 0;
+          background: linear-gradient(90deg, rgba(236,245,255,0.95) 0%, rgba(236,245,255,0.45) 35%, rgba(236,245,255,0.08) 70%, transparent 100%);
+          filter: blur(0px);
+        }
+
+        /* Right: mirrored */
+        .front-blur-right {
+          right: 0;
+          background: linear-gradient(270deg, rgba(236,245,255,0.95) 0%, rgba(236,245,255,0.45) 35%, rgba(236,245,255,0.08) 70%, transparent 100%);
+          filter: blur(0px);
+        }
+
+        /* If you want stronger blur on top of content, increase blur and/or width */
+        /* Example: filter: blur(14px); width: 260px; */
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+          .front-blur-left, .front-blur-right { width: 180px; filter: blur(5px); }
+        }
+        @media (max-width: 640px) {
+          .front-blur-left, .front-blur-right { width: 100px; filter: blur(4px); }
+        }
+
+        /* small responsive tweak for logo cards */
+        @media (max-width:640px) {
+          .logo-card { width: 110px; height: 56px; }
+          .track { gap: 0.75rem; }
+        }
+      `}</style>
+    </div>
+  );
+};
 
 const BetterChoice = () => {
   return (
-    <section className="w-full flex justify-center px-4 py-10 bg-white">
-      <div
-        className="
-          w-full max-w-6xl
-          rounded-[32px] border border-[#D9E5FF]
-          bg-gradient-to-r from-[#E4F1FF] via-[#F7FBFF] to-[#E4F1FF]
-          px-6 md:px-10 py-6 md:py-8
-          shadow-[0_14px_40px_rgba(10,67,148,0.08)]
-        "
-      >
-        {/* ROW 1 – right → left */}
-        <div className="overflow-hidden">
-          <div className="flex gap-6 animate-scrollLeft whitespace-nowrap">
-            {[...insurersRow1, ...insurersRow1].map((item, index) => (
-              <div
-                key={`r1-${index}`}
-                className="h-[70px] w-[150px] md:w-[160px] bg-white rounded-2xl
-                           flex items-center justify-center
-                           shadow-[0_6px_20px_rgba(13,80,190,0.10)]"
-              >
-                <img
-                  src={item.logo}
-                  alt="insurer"
-                  className="max-h-[42px] max-w-[120px] object-contain"
-                />
-              </div>
-            ))}
+    <section className="w-full flex justify-center px-10 py-3 bg-white">
+      {/* container that holds the content; text will be above blur */}
+      <div className="relative w-full max-w-7xl">
+        <div
+          className="rounded-[32px] border border-[#D9E5FF]
+            bg-gradient-to-r from-[#E4F1FF] via-[#F7FBFF] to-[#E4F1FF]
+            py-6 md:py-10 shadow-[0_14px_40px_rgba(10,67,148,0.08)]"
+          style={{ position: "relative", zIndex: 10 }} /* ensure text is above the slider blurs */
+        >
+          {/* The slider rows */}
+          <div className="mt-0">
+            <SlideTrack items={insurersRow1} speed="28s" reverse={false} />
+          </div>
+
+          <div className="mt-4">
+            <SlideTrack items={insurersRow2} speed="34s" reverse={true} />
+          </div>
+
+          {/* Text should sit above the blurs so it stays crisp and readable */}
+          <div className="mt-6 text-center" style={{ position: "relative", zIndex: 20 }}>
+            <p className="text-[18px] font-semibold text-[#092955]">
+              Get instant life insurance quotes
+            </p>
+            <p className="text-[16px] text-[#4A638B] mt-1">
+              from 30 of Philippines Top Insurers
+            </p>
           </div>
         </div>
 
-        {/* ROW 2 – left → right */}
-        <div className="overflow-hidden mt-4">
-          <div className="flex gap-6 animate-scrollRight whitespace-nowrap">
-            {[...insurersRow2, ...insurersRow2].map((item, index) => (
-              <div
-                key={`r2-${index}`}
-                className="h-[70px] w-[150px] md:w-[160px] bg-white rounded-2xl
-                           flex items-center justify-center
-                           shadow-[0_6px_20px_rgba(13,80,190,0.10)]"
-              >
-                <img
-                  src={item.logo}
-                  alt="insurer"
-                  className="max-h-[42px] max-w-[120px] object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Bottom text */}
-        <div className="mt-6 md:mt-7 text-center">
-          <p className="text-[15px] md:text-[17px] font-semibold text-[#092955]">
-            Get instant life insurance quotes
-          </p>
-          <p className="text-[13px] md:text-[14px] text-[#4A638B] mt-1">
-            from 30 of Philippines Top Insurers
-          </p>
+        <div className="flex justify-center mt-6">
+          <button className="inline-flex items-center justify-center bg-[#00A65A] px-4 py-2 rounded-full text-white font-normal text-[18px] shadow-[0_6px_15px_rgba(25,118,210,0.18)]  transition">
+            Better Insurance, Smarter Choice
+          </button>
         </div>
       </div>
     </section>
