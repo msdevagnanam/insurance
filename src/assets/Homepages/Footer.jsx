@@ -14,8 +14,8 @@ import { FiPlus } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#00355E] text-slate-100">
-      <div className="max-w-7xl mx-auto px-6 md:px-8 py-12">
+    <footer className="bg-[#00355E] text-slate-100 px-4 sm:px-6 lg:px-10 py-3">
+      <div className="max-w-7xl mx-auto md:px-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-start">
           {/* Logo / brand (left-most column) */}
           <div className="md:col-span-1 flex items-start">

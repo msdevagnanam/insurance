@@ -15,13 +15,13 @@ import { MdHeadsetMic } from "react-icons/md";   // Material icon
 
 export default function CustomerCall() {
   return (
-    <div className="px-10 py-3">
-        <section className="px-23">
+    <div className="px-4 sm:px-6 lg:px-10 py-3">
+        <section className="lg:px-23 py-6">
       <div className="relative rounded-2xl overflow-hidden bg-[#D8ECFF] border border-transparent">
         {/* Decorative geometric shapes (left + right) */}
         <div
           aria-hidden
-          className="absolute inset-y-0 left-0 w-1/3 md:w-1/4 lg:w-1/5 -top-10"
+          className="hidden lg:block absolute inset-y-0 left-0 w-1/3 md:w-1/4 lg:w-1/5 -top-10"
         >
           {/* <svg
             viewBox="0 0 200 200"
@@ -37,7 +37,7 @@ export default function CustomerCall() {
 
         <div
           aria-hidden
-          className="absolute inset-y-0 right-10 -bottom-12 w-1/3 md:w-1/4 lg:w-1/5  flex items-end justify-end"
+          className="hidden lg:block absolute inset-y-0 right-10 -bottom-12 w-1/3 md:w-1/4 lg:w-1/5  flex items-end justify-end"
         >
           {/* <svg viewBox="0 0 200 200" preserveAspectRatio="none" className="h-full w-full">
             <g transform="translate(0,0)" fill="none" stroke="#d6ecff" strokeWidth="18">
@@ -55,7 +55,7 @@ export default function CustomerCall() {
               Need insurance answers now?
             </h2>
 
-            <p className="mt-2 text-sm md:text-base text-center flex items-center justify-center gap-2 text-slate-600">
+            <p className="flex flex-col mt-2 text-sm md:text-base text-center md:flex items-center justify-center gap-2 text-slate-600">
               <a
                 href="tel:1-777-550-7766"
                 className="font-semibold text-center text-blue-600 hover:underline inline-flex items-center gap-2"
@@ -84,7 +84,7 @@ export default function CustomerCall() {
           </div>
 
           {/* Advisor image (shows on md+) */}
-          <div className=" absolute top-0 right-0">
+          <div className="hidden lg:block absolute top-0 right-0">
             <img
               src="/images/advisor.png"
               alt="advisor"

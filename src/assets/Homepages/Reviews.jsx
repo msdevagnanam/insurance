@@ -84,10 +84,10 @@ export default function TrustedFilipinos() {
   const translatePercent = -(index * slideWidthPercent);
 
   return (
-    <section className="px-10 py-3">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-start px-24">
+    <section className="px-4 sm:px-6 lg:px-10 py-3">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-start lg:px-24 py-6 min-h-[400px]">
         {/* Left rating card (kept faithful to screenshot) */}
-        <div className="md:col-span-2 rounded-lg border border-gray-100 shadow-sm bg-[linear-gradient(180deg,rgba(244,244,244,0)_37.53%,#E3F5FF_83.38%)] p-6 flex flex-col justify-between min-h-[400px]">
+        <div className="md:col-span-2 rounded-lg border border-gray-100 shadow-sm bg-[linear-gradient(180deg,rgba(244,244,244,0)_37.53%,#E3F5FF_83.38%)] p-6 flex flex-col justify-between lg:min-h-[400px]">
           <div className="relative flex-1">
             {/* arcs */}
             <div className="w-full h-52 rounded-lg relative flex items-center justify-center">
@@ -112,7 +112,7 @@ export default function TrustedFilipinos() {
             <p className="text-sm text-gray-600 text-center">
               100% of customers recommend us, The Best Filipinos/Filipinas Insurance Advisor
             </p>
-            <div className="mt-5 flex items-center justify-around">
+            <div className="mt-5 flex flex-col lg:flex-row items-center justify-around">
               <button className="bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:brightness-95">
                 Read All Reviews
               </button>
@@ -122,7 +122,7 @@ export default function TrustedFilipinos() {
         </div>
 
         {/* Right slider container */}
-        <div className="md:col-span-3 rounded-lg border border-gray-100 shadow-sm bg-[linear-gradient(180deg,#FFFFFF_0%,#E3F5FF_100%)] p-6 bg-white relative overflow-hidden snap-x snap-mandatory min-h-[400px]">
+        <div className="md:col-span-3 rounded-lg border border-gray-100 shadow-sm bg-[linear-gradient(180deg,#FFFFFF_0%,#E3F5FF_100%)] p-6 bg-white relative overflow-hidden snap-x snap-mandatory lg:min-h-[400px]">
           {/* header + controls */}
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-xl font-semibold text-gray-800">Trusted by Filipinos/Filipinas</h3>
@@ -149,7 +149,7 @@ export default function TrustedFilipinos() {
           <div className="w-full overflow-hidden ">
             {/* track */}
             <div
-              className="flex transition-transform duration-500 ease-in-out gap-4"
+              className="flex transition-transform duration-500 ease-in-out gap-4 w-[100%]"
               style={{
                 width: `${(n / visible) * 100}%`,
                 transform: `translateX(${translatePercent}%)`,
@@ -158,7 +158,7 @@ export default function TrustedFilipinos() {
               {reviews.map((r) => (
                 <article
                   key={r.id}
-                  className="snap-start bg-white rounded-xl p-5 shadow-[0_18px_40px_rgba(37,99,235,0.06)] border border-gray-100 "
+                  className=" snap-start bg-white rounded-xl p-5 shadow-[0_18px_40px_rgba(37,99,235,0.06)] border border-gray-100 "
                   style={{ flex: `0 0 ${slideWidthPercent}%` }}
                 >
                   <div className="flex items-center gap-3 mb-3">

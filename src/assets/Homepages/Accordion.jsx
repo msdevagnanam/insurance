@@ -54,8 +54,8 @@ export default function Accordion() {
   );
 
   return (
-    <div className="px-10 py-3">
-      <section className="max-w-7xl mx-auto px-6 md:px-16 py-16">
+    <div className="px-4 sm:px-6 lg:px-10 py-3">
+      <section className="max-w-7xl mx-auto md:px-16 py-6">
         <div className="mb-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
             Got any questions?

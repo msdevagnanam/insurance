@@ -131,11 +131,11 @@ const SlideTrack = ({ items, speed = "28s", reverse = false }) => {
 
 const BetterChoice = () => {
   return (
-    <section className="w-full flex justify-center px-10 py-3 bg-white">
+    <section className="w-full flex justify-center px-4 sm:px-6 lg:px-10 py-3 bg-white">
       {/* container that holds the content; text will be above blur */}
-      <div className="relative w-full max-w-7xl">
+      <div className="relative w-full max-w-7xl ">
         <div
-          className="rounded-[32px] border border-[#D9E5FF]
+          className="rounded-xl lg:rounded-[32px] border border-[#D9E5FF]
             bg-gradient-to-r from-[#E4F1FF] via-[#F7FBFF] to-[#E4F1FF]
             py-6 md:py-10 shadow-[0_14px_40px_rgba(10,67,148,0.08)]"
           style={{ position: "relative", zIndex: 10 }} /* ensure text is above the slider blurs */
@@ -161,7 +161,7 @@ const BetterChoice = () => {
         </div>
 
         <div className="flex justify-center mt-6">
-          <button className="inline-flex items-center justify-center bg-[#00A65A] px-4 py-2 rounded-full text-white font-normal text-[18px] shadow-[0_6px_15px_rgba(25,118,210,0.18)]  transition">
+          <button className="inline-flex items-center justify-center bg-[#00A65A] md:px-4 md:py-2 px-2 py-1 rounded-full text-white font-normal md:text-[18px] text-[14px] shadow-[0_6px_15px_rgba(25,118,210,0.18)]  transition">
             Better Insurance, Smarter Choice
           </button>
         </div>

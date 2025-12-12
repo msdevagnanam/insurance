@@ -55,7 +55,7 @@ const FeatureItem = ({ item, dark }) => {
       <div className="mt-[2px]">
         {item.good ? <IconCheck size={20} /> : <IconX size={16} />}
       </div>
-      <div className={`text-[20px] ${textClass}`}>{item.text}</div>
+      <div className={`sm:text-[18px] lg:text-[20px] ${textClass}`}>{item.text}</div>
     </li>
   );
 };
@@ -67,7 +67,7 @@ const CardDark = ({ title, items }) => (
     transition-all duration-300 
     hover:scale-[1.03] hover:shadow-xl"
   >
-    <h3 className="text-white text-center text-[20px] font-semibold mb-4">{title}</h3>
+    <h3 className="text-white text-center  sm:text-[18px] lg:text-[20px] font-semibold mb-4">{title}</h3>
 
     <div className="border-b-2 border-[#44546F] mb-4 p-0"></div>
 
@@ -86,7 +86,7 @@ const CardCenter = ({ title, items }) => (
     transition-all duration-300 
     hover:scale-[1.03] hover:shadow-2xl"
   >
-    <h3 className="text-[#24374A] text-center text-[20px] font-semibold mb-4">{title}</h3>
+    <h3 className="text-[#24374A] text-center sm:text-[18px] lg:text-[20px] font-semibold mb-4">{title}</h3>
 
     <div className="border-b-2 border-[#E0F2FE] mb-4"></div>
 
@@ -97,7 +97,7 @@ const CardCenter = ({ title, items }) => (
             <div className="mt-[3px]">
               <IconCheck size={20} />
             </div>
-            <div className="text-[20px] text-slate-700 font-medium">{it.text}</div>
+            <div className="sm:text-[18px] lg:text-[20px] text-slate-700 font-medium">{it.text}</div>
           </li>
         ))}
       </ul>
@@ -107,8 +107,8 @@ const CardCenter = ({ title, items }) => (
 
 const WhyChoose = () => {
   return (
-    <section className="py-3 px-10 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="px-4 sm:px-6 lg:px-10 py-3 bg-white">
+      <div className="max-w-7xl mx-auto py-6">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1F3550]">
