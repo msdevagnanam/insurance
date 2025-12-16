@@ -32,39 +32,39 @@ export default function Footer() {
 
           {/* Column 1 */}
           <div className="md:col-span-1">
-            <h4 className="text-sm font-medium text-slate-100 mb-4">Insurance Products</h4>
-            <ul className="space-y-3 text-sm text-slate-200">
+            <h4 className="text-sm font-medium text-[#FFFFFF] mb-4 lg:text-base">Insurance Products</h4>
+            <ul className="space-y-3 text-sm text-[#FFFFFF]">
               <li className="flex items-center gap-3">
                 <span className="flex items-center justify-center h-6 w-6 rounded-full border border-slate-300/30">
                   <FiPlus className="text-slate-100 text-[14px]" />
                 </span>
-                <a href="#" className="hover:underline">General Insurance</a>
+                <a href="#" className="hover:underline text-[#FFFFFF] font-light lg:text-base">General Insurance</a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex items-center justify-center h-6 w-6 rounded-full border border-slate-300/30">
                   <FiPlus className="text-slate-100 text-[14px]" />
                 </span>
-                <a href="#" className="hover:underline">Life Insurance</a>
+                <a href="#" className="hover:underline text-[#FFFFFF] font-light lg:text-base">Life Insurance</a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex items-center justify-center h-6 w-6 rounded-full border border-slate-300/30">
                   <FiPlus className="text-slate-100 text-[14px]" />
                 </span>
-                <a href="#" className="hover:underline">Term Insurance</a>
+                <a href="#" className="hover:underline text-[#FFFFFF] font-light lg:text-base">Term Insurance</a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="flex items-center justify-center h-6 w-6 rounded-full border border-slate-300/30">
                   <FiPlus className="text-slate-100 text-[14px]" />
                 </span>
-                <a href="#" className="hover:underline">Other Insurance</a>
+                <a href="#" className="hover:underline text-[#FFFFFF] font-light lg:text-base">Other Insurance</a>
               </li>
             </ul>
           </div>
 
           {/* Column 2 */}
           <div className="md:col-span-1">
-            <h4 className="text-sm font-medium text-slate-100 mb-4">Renew Your Policy</h4>
-            <ul className="space-y-3 text-sm text-slate-200">
+            <h4 className="text-sm font-medium text-slate-100 mb-4 lg:text-base">Renew Your Policy</h4>
+            <ul className="space-y-3 text-sm text-[#FFFFFF] font-light lg:text-base">
               <li><a href="#" className="hover:underline">Term Life Renewal</a></li>
               <li><a href="#" className="hover:underline">Investment Renewal</a></li>
               <li><a href="#" className="hover:underline">Health Renewal</a></li>
@@ -75,8 +75,8 @@ export default function Footer() {
 
           {/* Column 3 */}
           <div className="md:col-span-1">
-            <h4 className="text-sm font-medium text-slate-100 mb-4">Claim</h4>
-            <ul className="space-y-3 text-sm text-slate-200">
+            <h4 className="text-sm font-medium text-slate-100 mb-4 lg:text-base">Claim</h4>
+            <ul className="space-y-3 text-sm text-[#FFFFFF] font-light lg:text-base">
               <li><a href="#" className="hover:underline">File a new claim</a></li>
               <li><a href="#" className="hover:underline">Track existing claim</a></li>
             </ul>
@@ -84,8 +84,8 @@ export default function Footer() {
 
           {/* Column 4 (Support) */}
           <div className="md:col-span-1">
-            <h4 className="text-sm font-medium text-slate-100 mb-4">Support</h4>
-            <ul className="space-y-3 text-sm text-slate-200">
+            <h4 className="text-sm font-medium text-slate-100 mb-4 lg:text-base">Support</h4>
+            <ul className="space-y-3 text-sm text-[#FFFFFF] font-light lg:text-base">
               <li><a href="#" className="hover:underline">Contact Us</a></li>
               <li><a href="#" className="hover:underline">Help Center</a></li>
             </ul>
@@ -96,7 +96,7 @@ export default function Footer() {
       {/* copyright bar */}
       <div className="">
         <div className="max-w-7xl mx-auto px-6 md:px-8 py-4">
-          <p className="text-center text-xs text-slate-200/80">
+          <p className="text-center text-xs text-[#FFFFFF] font-light text-[14px] lg:text-base">
             © 2025 Unicon Insurance Brokers Corp. | All rights reserved.
           </p>
         </div>

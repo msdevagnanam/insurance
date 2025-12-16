@@ -49,7 +49,7 @@ const RightCoverage = () => {
               <h3 className="text-lg font-semibold text-slate-900">
                 Motor Car Insurance
               </h3>
-              <p className="mt-2 text-sm text-[16px] text-slate-600 leading-relaxed">
+              <p className="mt-2 text-sm text-[14px] md:text-[16px] text-[#1E293B] font-normal leading-relaxed">
                 Ang car insurance ay proteksyon laban sa aksidente, nakawan, at sakuna.
                 Bilang broker, tutulungan kitang makuha ang best coverage sa tamang
                 presyo, kasama ang cashless repair, roadside assistance, at helpful
@@ -76,7 +76,7 @@ const RightCoverage = () => {
             <h3 className="text-lg font-semibold text-slate-900">
               Life Insurance
             </h3>
-            <p className="mt-2 text-sm text-[16px] text-slate-600 leading-relaxed">
+            <p className="mt-2 text-sm md:text-[16px] text-[#1E293B] font-normal leading-relaxed">
               Protect your family&apos;s future with affordable life insurance.
             </p>
           </div>
@@ -90,7 +90,7 @@ const RightCoverage = () => {
             <h3 className="text-lg font-semibold text-slate-900">
               Casualty Lines Insurance
             </h3>
-            <p className="mt-2 text-sm text-[16px] text-slate-600 leading-relaxed">
+            <p className="mt-2 text-sm md:text-[16px] text-[#1E293B] font-normal leading-relaxed">
               Casualty lines insurance protects you from unexpected liabilities.
             </p>
           </div>
@@ -107,7 +107,7 @@ const RightCoverage = () => {
               <h3 className="text-lg font-semibold text-slate-900">
                 Property Insurance
               </h3>
-              <p className="mt-2 text-sm text-[16px] text-slate-600 leading-relaxed">
+              <p className="mt-2 text-sm md:text-[16px] text-[#1E293B] font-normal leading-relaxed">
                 Protect your property from unexpected risks. 
               </p>
             </div>
@@ -133,7 +133,7 @@ const RightCoverage = () => {
             <h3 className="text-lg font-semibold text-slate-900">
               Financial Lines Insurance
             </h3>
-            <p className="mt-2 text-sm text-[16px] text-slate-600 leading-relaxed">
+            <p className="mt-2 text-sm md:text-[16px] text-[#1E293B] font-normal leading-relaxed">
               Safeguard your business with financial lines insurance.
             </p>
           </div>
@@ -147,7 +147,7 @@ const RightCoverage = () => {
             <h3 className="text-lg font-semibold text-slate-900">
                Travel Insurance
             </h3>
-            <p className="mt-2 text-sm text-[16px] text-slate-600 leading-relaxed">
+            <p className="mt-2 text-sm md:text-[16px] text-[#1E293B] font-normal leading-relaxed">
              Travel with peace of mind! Travel insurance covers trip cancellations, medical emergencies, etc..
             </p>
             </div>
@@ -171,7 +171,7 @@ const RightCoverage = () => {
                 <h3 className="text-lg font-semibold text-slate-900">
                   Marine Insurance
                 </h3>
-                <p className="mt-2 text-sm text-[16px] text-slate-600 leading-relaxed">
+                <p className="mt-2 text-sm md:text-[16px] text-[#1E293B] font-normal leading-relaxed">
                   Protect your cargo and vessels with marine insurance.
                 </p>
               </div>
@@ -185,7 +185,7 @@ const RightCoverage = () => {
                 <h3 className="text-lg font-semibold text-slate-900">
                   Personal Accident Insurance
                 </h3>
-                <p className="mt-2 text-sm text-[16px] text-slate-600 leading-relaxed">
+                <p className="mt-2 text-sm md:text-[16px] text-[#1E293B] font-normal leading-relaxed">
                   Personal accident insurance provides financial support for injuries,
                   disabilities, and more.
                 </p>
@@ -200,7 +200,7 @@ const RightCoverage = () => {
                 <h3 className="text-lg font-semibold text-slate-900">
                   Medical Insurance
                 </h3>
-                <p className="mt-2 text-sm text-[16px] text-slate-600 leading-relaxed">
+                <p className="mt-2 text-sm md:text-[16px] text-[#1E293B] font-normal leading-relaxed">
                   Medical insurance covers unexpected medical expenses, ensuring you
                   and your family are protected.
                 </p>

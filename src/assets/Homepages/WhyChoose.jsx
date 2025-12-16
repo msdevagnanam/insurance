@@ -108,13 +108,13 @@ const CardCenter = ({ title, items }) => (
 const WhyChoose = () => {
   return (
     <section className="px-4 sm:px-6 lg:px-10 py-3 bg-white">
-      <div className="max-w-7xl mx-auto py-6">
+      <div className="max-w-7xl mx-auto lg:py-6">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1F3550]">
             Why Choose <span className="text-[#1E90FF]">UNICON?</span>
           </h2>
-          <p className="mt-3 text-[#64748B]">
+          <p className="mt-3 text-[#1E293B] font-medium">
             We make it easy, transparent, and fast — giving you the best policies without the hassle.
           </p>
         </div>

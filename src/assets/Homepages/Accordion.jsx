@@ -34,9 +34,9 @@ export default function Accordion() {
     >
       <button
         onClick={() => toggle(item.id)}
-        className="w-full px-6 py-4 flex items-center justify-between text-left"
+        className="w-full px-6 py-4 flex items-center justify-between text-left text-[#1E293B] font-normal text-sm sm:text-base"
       >
-        <span className="text-slate-800 text-sm sm:text-base">{item.q}</span>
+        <span className="text-[#1E293B] text-semibold sm:text-base ">{item.q}</span>
 
         <span className="ml-4 flex items-center justify-center text-[25px] h-12 w-12  ">
           {isOpen ? <FiX className="text-sky-500" /> : <FiPlus className="text-sky-500" />}
@@ -44,7 +44,7 @@ export default function Accordion() {
       </button>
 
       <div
-        className={`px-6 pb-4 text-slate-500 text-sm transition-all duration-200 ease-in-out ${
+        className={`px-6 pb-4 text-[#1E293B] font-normal text-sm transition-all duration-200 ease-in-out ${
           isOpen ? "max-h-96 opacity-100 pt-0" : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
@@ -60,7 +60,7 @@ export default function Accordion() {
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
             Got any questions?
           </h2>
-          <p className="text-slate-400 mt-2 font-semibold">We've got the answers.</p>
+          <p className="text-[#1E293B] mt-2 font-semibold">We've got the answers.</p>
         </div>
 
         {/* TWO COLUMN FAQ */}

@@ -151,16 +151,16 @@ const BetterChoice = () => {
 
           {/* Text should sit above the blurs so it stays crisp and readable */}
           <div className="mt-6 text-center" style={{ position: "relative", zIndex: 20 }}>
-            <p className="text-[18px] font-semibold text-[#092955]">
+            <p className="text-[18px] font-semibold text-[#1E293B]">
               Get instant life insurance quotes
             </p>
-            <p className="text-[16px] text-[#4A638B] mt-1">
+            <p className="text-[16px] text-[#1E293B] font-medium mt-1">
               from 30 of Philippines Top Insurers
             </p>
           </div>
         </div>
 
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center lg:mt-10 mt-6">
           <button className="inline-flex items-center justify-center bg-[#00A65A] md:px-4 md:py-2 px-2 py-1 rounded-full text-white font-normal md:text-[18px] text-[14px] shadow-[0_6px_15px_rgba(25,118,210,0.18)]  transition">
             Better Insurance, Smarter Choice
           </button>

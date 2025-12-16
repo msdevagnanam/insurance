@@ -52,7 +52,7 @@ const Herosection = () => {
             </div>
             <div className="text-[11px] leading-tight text-[#052044]">
               <p className="font-semibold text-[14px]">Low Fees</p>
-              <p className="text-gray-500 text-xs">No Hidden Charges</p>
+              <p className="text-[#1E293B] text-xs font-medium">No Hidden Charges</p>
             </div>
           </div>
 
@@ -63,16 +63,16 @@ const Herosection = () => {
             </div>
             <div className="text-[11px] leading-tight text-[#052044]">
               <p className="font-semibold text-[14px]">20,000+</p>
-              <p className="text-gray-500 text-xs">Policy Options</p>
+              <p className="text-[#1E293B] text-xs font-medium">Policy Options</p>
             </div>
           </div>
 
           {/* Bottom-left card (desktop only) */}
           <div className="hidden lg:flex absolute -bottom-8 left-20 bg-gradient-to-b from-white to-white/0 rounded-md shadow-md px-8 py-6 w-[360px] z-20">
             <div>
-              <p className="text-[15px] md:text-[16px] text-gray-600 leading-relaxed">
+              <p className="text-[15px] md:text-[16px] text-[#1E293B] font-medium leading-relaxed">
                 Find the best rates from{" "}
-                <span className="font-semibold text-[#052044]">Asia’s most trusted insurers</span>{" "}
+                <span className="font-medium text-[#1E293B]">Asia’s most trusted insurers</span>{" "}
                 in seconds. No paperwork. No hassle.
               </p>
 
@@ -92,10 +92,10 @@ const Herosection = () => {
                 <img src="/images/Hero-group.png" alt="group" className="w-16 h-16" />
               </div>
               <div>
-                <p className="text-[14px] md:text-[16px] text-[#052044] font-semibold">
+                <p className="text-[14px] md:text-[16px] text-[#1E293B] font-medium">
                   Protect Your Loved Ones—
                 </p>
-                <p className="text-[13px] md:text-[15px] text-gray-600">Fast, Simple, Trusted.</p>
+                <p className="text-[13px] md:text-[15px] text-[#1E293B] font-medium">Fast, Simple, Trusted.</p>
               </div>
             </div>
           </div>
@@ -108,8 +108,8 @@ const Herosection = () => {
               <PiSealPercentFill />
             </div>
             <div>
-              <p className="font-semibold text-sm text-[#052044]">Low Fees</p>
-              <p className="text-xs text-gray-500">No Hidden Charges</p>
+              <p className="font-medium text-sm text-[#1E293B]">Low Fees</p>
+              <p className="text-xs text-[#1E293B] font-medium">No Hidden Charges</p>
             </div>
           </div>
 
@@ -118,8 +118,8 @@ const Herosection = () => {
               <img src="/images/Frame.png" alt="policy" className="w-6 h-6" />
             </div>
             <div>
-              <p className="font-semibold text-sm text-[#052044]">20,000+</p>
-              <p className="text-xs text-gray-500">Policy Options</p>
+              <p className="font-medium text-sm text-[#1E293B]">20,000+</p>
+              <p className="text-xs text-[#1E293B] font-medium">Policy Options</p>
             </div>
           </div>
 
@@ -128,14 +128,14 @@ const Herosection = () => {
               <img src="/images/Hero-group.png" alt="group" className="w-8 h-8" />
             </div>
             <div>
-              <p className="font-semibold text-sm text-[#052044]">Protect Your Loved Ones—</p>
-              <p className="text-xs text-gray-600">Fast, Simple, Trusted.</p>
+              <p className="font-medium text-sm text-[#1E293B]">Protect Your Loved Ones—</p>
+              <p className="text-xs text-[#1E293B] font-medium">Fast, Simple, Trusted.</p>
             </div>
           </div>
 
           <div className="bg-white rounded-xl shadow px-4 py-3">
-            <p className="text-sm text-gray-600">
-              Find the best rates from <span className="font-semibold text-[#052044]">Asia’s most trusted insurers</span> in seconds. No paperwork. No hassle.
+            <p className="text-sm text-[#1E293B] font-medium">
+              Find the best rates from <span className="font-medium text-[#1E293B]">Asia’s most trusted insurers</span> in seconds. No paperwork. No hassle.
             </p>
             <div className="mt-3">
               <button className="inline-flex items-center gap-2 bg-[#156DFF] text-white text-sm font-semibold px-4 py-2 rounded-full shadow-md hover:bg-[#0a58d1] transition">

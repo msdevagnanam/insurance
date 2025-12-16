@@ -109,14 +109,14 @@ export default function TrustedFilipinos() {
           </div>
 
           <div className="mt-4">
-            <p className="text-sm text-gray-600 text-center">
+            <p className="text-sm text-[#1E293B] font-medium text-center">
               100% of customers recommend us, The Best Filipinos/Filipinas Insurance Advisor
             </p>
             <div className="mt-5 flex flex-col lg:flex-row items-center justify-around">
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-full shadow hover:brightness-95">
+              <button className="bg-blue-600 text-white px-4 py-2 font-medium rounded-full shadow hover:brightness-95">
                 Read All Reviews
               </button>
-              <span className="text-[20px] font-semibold text-gray-700">review.com</span>
+              <span className="text-[20px] font-medium text-[#1E293B]">review.com</span>
             </div>
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function TrustedFilipinos() {
 
                   <h4 className="text-lg font-semibold mb-2 text-gray-800">{r.title}</h4>
 
-                  <p className="text-sm text-gray-600 leading-6">{r.body}</p>
+                  <p className="text-sm text-[#1E293B] font-normal leading-6">{r.body}</p>
 
                   <p className="mt-4 text-sm font-semibold text-gray-700">{r.author}</p>
                 </article>

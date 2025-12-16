@@ -55,7 +55,7 @@ export default function CustomerCall() {
               Need insurance answers now?
             </h2>
 
-            <p className="flex flex-col mt-2 text-sm md:text-base text-center md:flex items-center justify-center gap-2 text-slate-600">
+            <p className="flex flex-col mt-2 text-sm md:text-base text-center md:flex items-center justify-center gap-2 text-[#1E293B] font-normal">
               <a
                 href="tel:1-777-550-7766"
                 className="font-semibold text-center text-blue-600 hover:underline inline-flex items-center gap-2"
